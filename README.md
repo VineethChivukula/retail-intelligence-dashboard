@@ -1,151 +1,270 @@
-# Retail Intelligence Dashboard
+# Retail Intelligence Hub 📊
 
-A comprehensive Streamlit-based retail analytics dashboard powered by Snowflake, providing real-time insights into sales performance, product metrics, benchmarking analysis, and AI-driven customer intelligence.
+A professional, enterprise-grade retail analytics platform built with Streamlit and Snowflake. Features real-time business intelligence, competitive benchmarking, customer insights, and AI-powered natural language queries—all with a modern dark-themed interface.
 
-## Features
+---
 
-### 📊 **Product Performance Metrics**
-- Top 10 products by quantity sold
-- Average sale price analysis with filtering capabilities
-- Product availability status tracking
-- Product review insights and ratings
-- Search and price range filtering
+## ✨ Features
 
-### 📈 **Sales Performance Metrics**
-- Multi-dimensional sales analysis (Brand, Category, Subcategory, Merchant)
-- Interactive date range selection
-- Sales trend visualization over time
-- Top-performing products by brand
-- Dynamic filter options with real-time updates
-- Summary metrics (Total Sales, Average Daily Sales, Transaction Count)
+### 📈 **Sales Performance Dashboard**
+
+- **Key Performance Indicators (KPIs)**
+  - Total Revenue with period-over-period growth
+  - Average Order Value (AOV) tracking
+  - Conversion Rate analysis
+  - Customer metrics and discount analytics
+- **Advanced Analytics**
+  - Daily sales trends with 7-day moving averages
+  - Sales by day of week analysis
+  - Category and brand performance comparison
+  - Merchant performance breakdown with profitability metrics
+- **Interactive Visualizations**
+  - Dual-axis charts (Revenue + Orders)
+  - Dynamic pie charts for revenue distribution
+  - Top performing products with review ratings
+  - Customizable date range filtering
+
+### 📦 **Product Performance & Inventory Analytics**
+
+- **Inventory Health Dashboard**
+  - Real-time stock status monitoring (In-Stock, Limited, Out-of-Stock)
+  - Average daily sales velocity
+  - 30-day revenue tracking
+  - Quick stock lookup with search
+- **Product Profitability Matrix**
+  - Revenue vs. Volume bubble charts
+  - Quadrant analysis (Stars, Premium, Volume, Question Marks)
+  - Strategic insights for inventory optimization
+- **Pricing Analysis**
+  - Price distribution with min-max ranges
+  - Price segmentation (Budget, Mid-range, Premium, Luxury)
+  - Average sale price trends with error bars
+- **Customer Review Intelligence**
+  - Rating vs. Review volume analysis
+  - Top/Bottom performer identification
+  - Sentiment distribution (Poor, Fair, Good, Excellent)
+  - Advanced filtering by rating and review count
 
 ### 💰 **Benchmarking & Customer Insights**
-- Price comparison analysis (Above/Below/At Benchmark)
-- Competitor pricing trends visualization
-- Benchmark category performance sunburst charts
-- Payment method analysis
-- Customer segmentation with spending and purchase frequency analysis
-- Multi-store and multi-brand filtering
 
-### 💬 **Cortex AI Agent**
-- Natural language queries for data insights
-- Predefined suggestion prompts
-- Interactive chat interface with data-driven responses
-- Automatic chart generation (Line, Bar, Data Table)
+- **Competitive Price Intelligence**
+  - Real-time price comparison vs. competitors
+  - Price positioning scatter plots
+  - Gap analysis with percentage differences
+  - Multi-store and brand filtering
+- **Competitor Trend Analysis**
+  - Historical pricing trends across stores
+  - Category-level price distribution
+  - Market share visualization with sunburst charts
+- **Customer Behavior Analytics**
+  - Payment method preferences with revenue breakdown
+  - RFM (Recency, Frequency, Monetary) segmentation
+  - Customer Lifetime Value (CLV) analysis
+  - Customer quadrant analysis (VIP, Frequent Buyers, High Spenders, Occasional)
+  - Top customer identification and filtering
 
-## Tech Stack
+### 🤖 **AI Data Assistant (Cortex Analyst)**
 
-- **Frontend**: [Streamlit](https://streamlit.io/)
-- **Data Source**: [Snowflake](https://www.snowflake.com/)
-- **Data Processing**: [Pandas](https://pandas.pydata.org/)
-- **Visualization**: [Plotly](https://plotly.com/)
-- **Database Connector**: [snowflake-connector-python](https://docs.snowflake.com/en/developer-guide/python-connector/python-connector-example)
-- **Environment Management**: [python-dotenv](https://python-dotenv.readthedocs.io/)
+- **Natural Language Queries**
+  - Ask questions in plain English
+  - AI-powered SQL generation
+  - Automatic data visualization
+- **Smart Features**
+  - Row limiting for performance (max 1,000 display, 10,000 query limit)
+  - CSV export for large datasets
+  - Interactive tabs (Data Table, Line Chart, Bar Chart)
+  - SQL query inspection
+- **Dark-Themed Chat Interface**
+  - Gradient user messages
+  - Dark data tables with amber accents
+  - Responsive design
 
-## Installation
+---
 
-### Prerequisites
+## 🎨 Design & User Experience
+
+### **Modern Dark Theme**
+
+- Dynamic color schemes per dashboard:
+  - 🟢 **Sales Performance**: Green (#10b981) - Growth & Revenue
+  - 🔵 **Product Analytics**: Blue (#3b82f6) - Data Analysis
+  - 🟣 **Benchmarking**: Purple (#8b5cf6) - Premium Intelligence
+  - 🟠 **AI Assistant**: Amber (#f59e0b) - Intelligent Insights
+
+### **Professional UI Elements**
+
+- Smooth transitions and hover effects
+- Gradient accents and glowing selected states
+- Dark sidebar with custom scrollbar
+- Live status indicator with pulse animation
+- Responsive layout optimized for wide screens
+
+---
+
+## 🛠️ Tech Stack
+
+| Component              | Technology                                                                                                          |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Frontend Framework** | [Streamlit](https://streamlit.io/) 1.31.0                                                                           |
+| **Data Warehouse**     | [Snowflake](https://www.snowflake.com/)                                                                             |
+| **Data Processing**    | [Pandas](https://pandas.pydata.org/) 2.1.4                                                                          |
+| **Visualizations**     | [Plotly Express & Graph Objects](https://plotly.com/) 5.18.0                                                        |
+| **Database Connector** | [snowflake-connector-python](https://docs.snowflake.com/en/developer-guide/python-connector/python-connector) 3.6.0 |
+| **Navigation**         | [streamlit-option-menu](https://github.com/victoryhb/streamlit-option-menu) 0.3.12                                  |
+| **Environment Config** | [python-dotenv](https://python-dotenv.readthedocs.io/) 1.0.0                                                        |
+| **AI Integration**     | Snowflake Cortex Analyst API                                                                                        |
+
+---
+
+## 🚀 Installation
+
+### **Prerequisites**
+
 - Python 3.8 or higher
 - Snowflake account with appropriate credentials
-- Internet connection
+- Active Snowflake warehouse
+- Cortex Analyst semantic model (for AI features)
 
-### Setup
+### **Quick Start**
 
 1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd retail-intelligence-dashboard
-   ```
 
-2. **Create a virtual environment** (optional but recommended)
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+```bash
+git clone <repository-url>
+cd retail-intelligence-hub
+```
+
+2. **Create virtual environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
 
 3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+```bash
+pip install -r requirements.txt
+```
 
 4. **Configure environment variables**
-   
-   Create or update the `.env` file with your Snowflake credentials:
-   ```env
-   DATABASE = "YOUR_DATABASE_NAME"
-   SCHEMA = "YOUR_SCHEMA_NAME"
-   WAREHOUSE = "YOUR_WAREHOUSE_NAME"
-   HOST = "YOUR_SNOWFLAKE_HOST"
-   ACCOUNT = "YOUR_ACCOUNT_ID"
-   USER = "YOUR_USERNAME"
-   PASSWORD = "YOUR_PASSWORD"
-   ROLE = "YOUR_ROLE"
-   SEMANTIC_VIEW = "YOUR_SEMANTIC_VIEW_NAME"
-   ```
 
-## Usage
+Create a `.env` file in the project root:
 
-### Running the Dashboard
+```
+# Snowflake Connection
+USER=your_snowflake_username
+PASSWORD=your_snowflake_password
+ACCOUNT=your_account_identifier
+WAREHOUSE=your_warehouse_name
+DATABASE=your_database_name
+SCHEMA=your_schema_name
+
+# Cortex Analyst Configuration
+HOST=your_account.snowflakecomputing.com
+SEMANTIC_VIEW=your_semantic_model_name
+```
+
+5. **Launch the dashboard**
 
 ```bash
 streamlit run dashboard.py
 ```
 
-The dashboard will open in your default browser at `http://localhost:8501`
+The dashboard will open at `http://localhost:8501`
 
-### Navigation
+---
 
-Use the sidebar to navigate between different sections:
-- **Product Performance Metrics** - Analyze product sales and reviews
-- **Sales Performance Metrics** - Track sales by brand, category, and merchant
-- **Benchmarking and Customer Insights** - Compare prices and analyze customer behavior
-- **Chat with Agent** - Ask AI-powered questions about your data
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-retail-intelligence-dashboard/
-├── dashboard.py                          # Main entry point and navigation
-├── product_performance_metrics.py        # Product analytics module
-├── sales_performance_metrics.py          # Sales analytics module
-├── benchmarking_and_customer_insights.py # Benchmarking and customer analysis
-├── cortex_analyst.py                     # AI chat agent integration
-├── requirements.txt                      # Python dependencies
-├── .env                                  # Environment variables (not in git)
-├── .gitignore                            # Git ignore rules
-└── README.md                             # This file
+retail-intelligence-hub/
+├── dashboard.py                              # Main navigation with dynamic theming
+├── db_connection.py                          # Centralized database connection (NEW)
+├── sales_performance_metrics.py              # Sales analytics with KPIs
+├── product_performance_metrics.py            # Product & inventory intelligence
+├── benchmarking_and_customer_insights.py     # Competitive & customer analytics
+├── cortex_analyst.py                         # AI chat interface with row limiting
+├── requirements.txt                          # Python dependencies
+├── .env                                      # Environment variables (not in git)
+├── .env.example                              # Environment template
+├── .gitignore                                # Git ignore rules
+└── README.md                                 # This file
 ```
 
-## Key Modules
+---
 
-### [dashboard.py](dashboard.py)
-Main navigation hub that routes users to different analytical sections.
+## 🔧 Key Components
 
-### [product_performance_metrics.py](product_performance_metrics.py)
-Provides insights into product sales volume, pricing, availability, and customer reviews.
+### **db_connection.py** ⭐ NEW
 
-### [sales_performance_metrics.py](sales_performance_metrics.py)
-Analyzes sales trends across brands, categories, subcategories, and merchants with temporal analysis.
+Centralized database management for optimized performance:
 
-### [benchmarking_and_customer_insights.py](benchmarking_and_customer_insights.py)
-Compares pricing against benchmarks, tracks competitor trends, and segments customers by spending behavior.
+- Singleton connection with `@st.cache_resource`
+- Query caching with 1-hour TTL via `@st.cache_data`
+- Error handling and graceful degradation
+- Helper functions for filter options
 
-### [cortex_analyst.py](cortex_analyst.py)
-AI-powered chat interface using Snowflake Cortex for natural language data queries.
+### **dashboard.py**
 
-## Database Schema
+Main navigation hub with advanced features:
 
-The dashboard connects to Snowflake tables including:
-- **Sales** - Transaction and sales data
-- **Products** - Product catalog with brand and taxonomy information
-- **Pricing** - Current and benchmark pricing data
-- **Third_Party_Merchants** - Merchant information
-- **Benchmark** - Competitive benchmark data
-- **Availability** - Product availability status
-- **Reviews** - Customer reviews and ratings
-- **Customers** - Customer information
+- Dynamic theme switching per dashboard
+- Dark-themed sidebar with gradient accents
+- Real-time status indicator
+- Collapsible help section
+- Professional footer with branding
 
-```SQL
+### **sales_performance_metrics.py**
+
+Comprehensive sales intelligence:
+
+- Period-over-period comparison engine
+- Multi-dimensional filtering (Brand, Category, Merchant, Date)
+- Dual-axis trend charts
+- Top product identification
+- Merchant profitability analysis
+
+### **product_performance_metrics.py**
+
+Product and inventory optimization:
+
+- Inventory health scoring
+- Profitability matrix with quadrant analysis
+- Pricing analysis with statistical insights
+- Review sentiment analysis
+- Search and advanced filtering
+
+### **benchmarking_and_customer_insights.py**
+
+Competitive intelligence and customer analytics:
+
+- Price positioning vs. competitors
+- Competitor trend tracking
+- Payment method analysis
+- RFM customer segmentation
+- CLV calculation and insights
+
+### **cortex_analyst.py**
+
+AI-powered natural language interface:
+
+- Natural language to SQL conversion
+- Automatic row limiting (1,000 display / 10,000 query)
+- CSV export for large datasets
+- Dark-themed data tables and charts
+- Interactive suggestion prompts
+
+---
+
+## 🗄️ Database Schema
+
+The platform connects to the following Snowflake tables:
+
+### **Core Tables**
+
+```sql
+-- Products catalog
 CREATE TABLE Products (
     ITEM_ID INT AUTOINCREMENT PRIMARY KEY,
     ITEM_NAME VARCHAR(255),
@@ -158,6 +277,7 @@ CREATE TABLE Products (
     COMPANY_NAME VARCHAR(255)
 );
 
+-- Product availability status
 CREATE TABLE Availability (
     ITEM_ID INT,
     AVAILABILITY_INDICATOR VARCHAR(50),
@@ -165,6 +285,7 @@ CREATE TABLE Availability (
     FOREIGN KEY (ITEM_ID) REFERENCES Products(ITEM_ID)
 );
 
+-- Competitive benchmark data
 CREATE TABLE Benchmark (
     BENCHMARK_ID INT AUTOINCREMENT PRIMARY KEY,
     BENCHMARK_BRAND_NAME VARCHAR(255),
@@ -180,6 +301,7 @@ CREATE TABLE Benchmark (
     BENCHMARK_UPC_NUM VARCHAR(100)
 );
 
+-- Pricing and benchmarks
 CREATE TABLE Pricing (
     ITEM_ID INT,
     PRODUCT_PRICE FLOAT,
@@ -192,6 +314,7 @@ CREATE TABLE Pricing (
     FOREIGN KEY (BENCHMARK_ID) REFERENCES Benchmark(BENCHMARK_ID)
 );
 
+-- Customer reviews
 CREATE TABLE Reviews (
     ITEM_ID INT,
     ITEM_REVIEW_COUNT INT,
@@ -200,11 +323,13 @@ CREATE TABLE Reviews (
     FOREIGN KEY (ITEM_ID) REFERENCES Products(ITEM_ID)
 );
 
+-- Third-party merchants
 CREATE TABLE Third_Party_Merchants (
     MERCHANT_ID INT AUTOINCREMENT PRIMARY KEY,
     THIRD_PARTY_MERCHANT_NAME VARCHAR(255)
 );
 
+-- Product-Merchant mapping
 CREATE TABLE Product_Merchant_Mapping (
     ITEM_ID INT,
     MERCHANT_ID INT,
@@ -213,8 +338,9 @@ CREATE TABLE Product_Merchant_Mapping (
     FOREIGN KEY (MERCHANT_ID) REFERENCES Third_Party_Merchants(MERCHANT_ID)
 );
 
+-- Sales transactions
 CREATE TABLE Sales (
-SALE_ID INT AUTOINCREMENT PRIMARY KEY,
+    SALE_ID INT AUTOINCREMENT PRIMARY KEY,
     ITEM_ID INT,
     MERCHANT_ID INT,
     SALE_DATE DATE,
@@ -229,75 +355,247 @@ SALE_ID INT AUTOINCREMENT PRIMARY KEY,
 );
 ```
 
-## Features & Capabilities
+---
 
-### Real-time Caching
-- `@st.cache_resource` for persistent database connections
-- `@st.cache_data` for query results (1-hour TTL)
-- Improves dashboard performance and reduces database load
+## 🎯 Key Capabilities
 
-### Error Handling
-- Comprehensive try-catch blocks for database operations
-- User-friendly error messages
-- Graceful degradation when data is unavailable
+### **Performance Optimization**
 
-### Interactive Filtering
-- Multi-select filters for flexible data exploration
-- Dynamic subcategory loading based on category selection
-- Date range selection with validation
-- Search functionality for product titles
+- ✅ Centralized database connection pooling
+- ✅ Query result caching (1-hour TTL)
+- ✅ Lazy loading with conditional rendering
+- ✅ Row limiting for large datasets (max 1,000 rows display)
+- ✅ Automatic SQL LIMIT injection for safety
+- ✅ CSV export for offline analysis
 
-### Visualizations
-- Bar charts for comparative analysis
-- Line charts for trend analysis
-- Sunburst charts for hierarchical data
-- Pie charts for distribution analysis
-- Bubble charts for multi-dimensional analysis
+### **Advanced Analytics**
 
-## Performance Optimization
+- ✅ Period-over-period growth calculations
+- ✅ Moving averages for trend smoothing
+- ✅ Quadrant analysis for strategic insights
+- ✅ RFM customer segmentation
+- ✅ Customer Lifetime Value (CLV) modeling
+- ✅ Price positioning analysis
 
-- Streamlit caching mechanisms to reduce redundant queries
-- Conditional chart rendering based on filter selections
-- Efficient Snowflake SQL queries with aggregation
-- Lazy loading of data based on user selections
+### **User Experience**
 
-## Security
+- ✅ Responsive dark theme with dynamic colors
+- ✅ Interactive filters with multi-select
+- ✅ Real-time data updates
+- ✅ Comprehensive error handling
+- ✅ Pagination for large datasets
+- ✅ Export capabilities (CSV download)
 
-⚠️ **Important**: Never commit `.env` file with credentials to version control. The `.gitignore` is configured to exclude sensitive files.
+### **Data Visualization**
 
-- Credentials are stored in `.env` file (not in version control)
-- Use environment variables for all sensitive information
-- Implement role-based access control through Snowflake roles
-
-## Troubleshooting
-
-### Connection Issues
-- Verify Snowflake credentials in `.env` file
-- Check network connectivity to Snowflake
-- Ensure warehouse is active and running
-
-### Data Not Loading
-- Check if tables exist in the specified schema
-- Verify SQL queries for syntax errors
-- Confirm user has appropriate Snowflake permissions
-
-### Performance Issues
-- Clear Streamlit cache: Delete `.streamlit/` directory
-- Increase warehouse compute resources
-- Optimize SQL queries for better performance
-
-## Future Enhancements
-
-- [ ] Advanced anomaly detection
-- [ ] Predictive analytics capabilities
-- [ ] Real-time alerts and notifications
-- [ ] Custom dashboard builder
-- [ ] Mobile-responsive design improvements
-
-## Support
-
-For issues or questions, please open an issue in the repository or contact the development team.
+- ✅ Plotly interactive charts
+- ✅ Dual-axis trend analysis
+- ✅ Bubble charts for multi-dimensional data
+- ✅ Sunburst charts for hierarchical data
+- ✅ Custom color schemes per dashboard
+- ✅ Hover tooltips with detailed info
 
 ---
 
-**Last Updated**: December 30, 2025
+## 🔒 Security Best Practices
+
+⚠️ **Important Security Notes:**
+
+1. **Never commit `.env` file** - Contains sensitive credentials
+2. **Use environment variables** - All sensitive data in `.env`
+3. **Role-based access** - Implement Snowflake RBAC
+4. **Warehouse management** - Auto-suspend unused warehouses
+5. **Query limits** - Automatic row limiting prevents excessive data pulls
+
+### **.gitignore Configuration**
+
+```
+.env
+__pycache__/
+*.pyc
+.streamlit/
+venv/
+```
+
+---
+
+## 🐛 Troubleshooting
+
+### **Connection Issues**
+
+```bash
+# Verify Snowflake credentials
+cat .env | grep USER
+
+# Test connection
+python -c "from db_connection import init_connection; init_connection()"
+
+# Check network/firewall
+ping your_account.snowflakecomputing.com
+```
+
+### **Performance Issues**
+
+- **Clear cache**: Remove `.streamlit/cache/` directory
+- **Increase warehouse size**: Upgrade to MEDIUM or LARGE
+- **Optimize queries**: Review SQL execution plans
+- **Reduce date ranges**: Filter to smaller time periods
+
+### **Data Not Loading**
+
+- Verify table names match schema exactly
+- Check user permissions: `SHOW GRANTS TO USER your_user;`
+- Ensure warehouse is running: `SHOW WAREHOUSES;`
+- Review query logs in Snowflake UI
+
+### **AI Assistant Issues**
+
+- Verify `SEMANTIC_VIEW` is created and accessible
+- Check Cortex Analyst is enabled for your account
+- Ensure token permissions are correct
+- Review API timeout settings (default: 30s)
+
+---
+
+## 📊 Dashboard Metrics Reference
+
+### **Sales Performance KPIs**
+
+| Metric                | Calculation                               | Purpose                   |
+| --------------------- | ----------------------------------------- | ------------------------- |
+| Total Revenue         | `SUM(TOTAL_SALE_AMOUNT)`                  | Overall sales performance |
+| Revenue Growth %      | `((Current - Previous) / Previous) * 100` | Period comparison         |
+| Avg Order Value (AOV) | `AVG(TOTAL_SALE_AMOUNT)`                  | Transaction value         |
+| Conversion Rate       | `(Orders / Customers) * 100`              | Purchase efficiency       |
+| Avg Discount          | `AVG(DISCOUNT_APPLIED)`                   | Promotional impact        |
+
+### **Product Performance KPIs**
+
+| Metric               | Purpose                    |
+| -------------------- | -------------------------- |
+| In-Stock Rate        | Inventory health indicator |
+| Stock-to-Sales Ratio | Inventory efficiency       |
+| Avg Daily Sales      | Velocity tracking          |
+| Review Rating        | Customer satisfaction      |
+| Price Volatility     | Pricing stability          |
+
+### **Customer Segmentation (RFM)**
+
+| Segment           | Criteria                           |
+| ----------------- | ---------------------------------- |
+| VIP Customers     | High Frequency + High Spending     |
+| Frequent Buyers   | High Frequency + Moderate Spending |
+| High Spenders     | Low Frequency + High Spending      |
+| Occasional Buyers | Low Frequency + Low Spending       |
+
+---
+
+## 🚀 Advanced Configuration
+
+### **Custom Row Limits**
+
+Edit `cortex_analyst.py`:
+
+```python
+MAX_DISPLAY_ROWS = 1000  # Adjust display limit
+MAX_CHART_ROWS = 100     # Adjust chart limit
+```
+
+### **Cache Configuration**
+
+Edit `db_connection.py`:
+
+```python
+@st.cache_data(ttl=3600)  # Change TTL (seconds)
+def run_query(query, params=None):
+        # ...
+```
+
+### **Theme Customization**
+
+Edit `dashboard.py` `DASHBOARD_THEMES` dictionary:
+
+```python
+DASHBOARD_THEMES = {
+        "Sales Performance": {
+                "primary": "#your_color",
+                "secondary": "#your_color",
+                # ...
+        }
+}
+```
+
+---
+
+## 📈 Roadmap & Future Enhancements
+
+- [ ] **Predictive Analytics** - Sales forecasting with ML models
+- [ ] **Anomaly Detection** - Automated alerts for unusual patterns
+- [ ] **Custom Dashboards** - User-defined metric builders
+- [ ] **Mobile Optimization** - Responsive design for tablets/phones
+- [ ] **Export Suite** - PDF reports and scheduled email delivery
+- [ ] **Real-time Streaming** - Live data updates with Snowpipe
+- [ ] **Multi-tenancy** - Organization-level access control
+- [ ] **Advanced RFM** - Predictive customer churn models
+- [ ] **A/B Testing** - Pricing and promotion experiments
+- [ ] **Inventory Forecasting** - AI-powered restock recommendations
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### **Code Style**
+
+- Follow PEP 8 guidelines
+- Use meaningful variable names
+- Add docstrings to functions
+- Include error handling
+- Write comments for complex logic
+
+---
+
+## 📝 License
+
+This project is proprietary software. All rights reserved.
+
+---
+
+## 📧 Support & Contact
+
+- **Issues**: Open a GitHub issue
+- **Email**: support@retailintel.com
+- **Documentation**: [Wiki](link-to-wiki)
+- **Slack**: [Join Community](link-to-slack)
+
+---
+
+## 🙏 Acknowledgments
+
+- **Snowflake** - For the powerful data warehouse platform
+- **Streamlit** - For the incredible Python framework
+- **Plotly** - For interactive visualization library
+- **Contributors** - Thank you to all who have contributed!
+
+---
+
+**Version**: 2.0  
+**Last Updated**: December 30, 2025  
+**Maintained by**: Retail Intelligence Team
+
+---
+
+<div align="center">
+
+**Built with ❤️ using Streamlit & Snowflake**
+
+⭐ Star us on GitHub if you find this useful!
+
+</div>

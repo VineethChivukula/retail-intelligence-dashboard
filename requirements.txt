@@ -4,3 +4,4 @@ python-dotenv
 pandas
 plotly
 streamlit-option-menu
+requests
