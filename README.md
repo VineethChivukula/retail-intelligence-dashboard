@@ -105,13 +105,13 @@ A professional, enterprise-grade retail analytics platform built with Streamlit 
 
 | Component              | Technology                                                                                                          |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **Frontend Framework** | [Streamlit](https://streamlit.io/) 1.31.0                                                                           |
+| **Frontend Framework** | [Streamlit](https://streamlit.io/)                                                                          |
 | **Data Warehouse**     | [Snowflake](https://www.snowflake.com/)                                                                             |
-| **Data Processing**    | [Pandas](https://pandas.pydata.org/) 2.1.4                                                                          |
-| **Visualizations**     | [Plotly Express & Graph Objects](https://plotly.com/) 5.18.0                                                        |
-| **Database Connector** | [snowflake-connector-python](https://docs.snowflake.com/en/developer-guide/python-connector/python-connector) 3.6.0 |
-| **Navigation**         | [streamlit-option-menu](https://github.com/victoryhb/streamlit-option-menu) 0.3.12                                  |
-| **Environment Config** | [python-dotenv](https://python-dotenv.readthedocs.io/) 1.0.0                                                        |
+| **Data Processing**    | [Pandas](https://pandas.pydata.org/)                                                                          |
+| **Visualizations**     | [Plotly Express & Graph Objects](https://plotly.com/)                                                    |
+| **Database Connector** | [snowflake-connector-python](https://docs.snowflake.com/en/developer-guide/python-connector/python-connector) |
+| **Navigation**         | [streamlit-option-menu](https://github.com/victoryhb/streamlit-option-menu)                                |
+| **Environment Config** | [python-dotenv](https://python-dotenv.readthedocs.io/)                                                     |
 | **AI Integration**     | Snowflake Cortex Analyst API                                                                                        |
 
 ---
@@ -479,15 +479,6 @@ ping your_account.snowflakecomputing.com
 | Review Rating        | Customer satisfaction      |
 | Price Volatility     | Pricing stability          |
 
-### **Customer Segmentation (RFM)**
-
-| Segment           | Criteria                           |
-| ----------------- | ---------------------------------- |
-| VIP Customers     | High Frequency + High Spending     |
-| Frequent Buyers   | High Frequency + Moderate Spending |
-| High Spenders     | Low Frequency + High Spending      |
-| Occasional Buyers | Low Frequency + Low Spending       |
-
 ---
 
 ## 🚀 Advanced Configuration
@@ -527,21 +518,6 @@ DASHBOARD_THEMES = {
 
 ---
 
-## 📈 Roadmap & Future Enhancements
-
-- [ ] **Predictive Analytics** - Sales forecasting with ML models
-- [ ] **Anomaly Detection** - Automated alerts for unusual patterns
-- [ ] **Custom Dashboards** - User-defined metric builders
-- [ ] **Mobile Optimization** - Responsive design for tablets/phones
-- [ ] **Export Suite** - PDF reports and scheduled email delivery
-- [ ] **Real-time Streaming** - Live data updates with Snowpipe
-- [ ] **Multi-tenancy** - Organization-level access control
-- [ ] **Advanced RFM** - Predictive customer churn models
-- [ ] **A/B Testing** - Pricing and promotion experiments
-- [ ] **Inventory Forecasting** - AI-powered restock recommendations
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions! Please follow these steps:
@@ -552,50 +528,15 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-### **Code Style**
-
-- Follow PEP 8 guidelines
-- Use meaningful variable names
-- Add docstrings to functions
-- Include error handling
-- Write comments for complex logic
-
 ---
 
-## 📝 License
-
-This project is proprietary software. All rights reserved.
-
----
-
-## 📧 Support & Contact
-
-- **Issues**: Open a GitHub issue
-- **Email**: support@retailintel.com
-- **Documentation**: [Wiki](link-to-wiki)
-- **Slack**: [Join Community](link-to-slack)
-
----
-
-## 🙏 Acknowledgments
-
-- **Snowflake** - For the powerful data warehouse platform
-- **Streamlit** - For the incredible Python framework
-- **Plotly** - For interactive visualization library
-- **Contributors** - Thank you to all who have contributed!
-
----
-
-**Version**: 2.0  
-**Last Updated**: December 30, 2025  
-**Maintained by**: Retail Intelligence Team
+**Last Updated**: January 2026  
+**Maintained by**: IceQuery Crew
 
 ---
 
 <div align="center">
 
 **Built with ❤️ using Streamlit & Snowflake**
-
-⭐ Star us on GitHub if you find this useful!
 
 </div>
